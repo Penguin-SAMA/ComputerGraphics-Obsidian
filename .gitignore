@@ -1,0 +1,12 @@
+# Large files
+*.pdf
+
+# Obsidian workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Claude Code
+.claude/
+.agents/
+.trae/
+skills-lock.json
