@@ -1,5 +1,6 @@
 # Large files
 *.pdf
+!RTR4th/PDF/*.pdf
 
 # Obsidian workspace
 .obsidian/workspace.json
