@@ -53,7 +53,7 @@ aliases:
 
 ### 4. 在渲染流程中的作用
 
-这章其实是整本书的"地图"。后面的 [[Chapter 3 - The Graphics Processing Unit|GPU架构]]、[[Chapter 5 - Shading Basics|着色基础]]、[[Chapter 6 - Texturing|纹理]]、[[Chapter 7 - Shadows|阴影]]，几乎都是在解释这条管线上的某一段。
+这章其实是整本书的"地图"。后面的 [[Chapter 3 The Graphics Processing Unit|GPU架构]]、[[Chapter 5 - Shading Basics|着色基础]]、[[Chapter 6 - Texturing|纹理]]、[[Chapter 7 - Shadows|阴影]]，几乎都是在解释这条管线上的某一段。
 
 ### 5. 简单类比
 
@@ -133,6 +133,8 @@ aliases:
 
 三维模型原本在世界里有自己的位置、朝向和大小，但屏幕只认"相对于相机，它在哪里"。所以必须把顶点做变换、投影、裁剪，再放到屏幕坐标里。
 
+![[RTR4-CN.pdf#page=42&rect=65,84,518,180|RTR4-CN, p.42]]
+
 ### 2. 基本定义
 
 书中把几何处理阶段分成四部分：
@@ -160,6 +162,8 @@ aliases:
 
 - 物体从模型空间到世界/观察空间
 - 再通过投影变换进入裁剪/规范化空间
+
+![[RTR4-CN.pdf#page=44&rect=53,403,536,671|RTR4-CN, p.44]]
 
 > [!tip] 观察变换的目的
 > 把相机重新放到原点、朝向固定方向，这样后续投影和裁剪会更简单。
@@ -232,6 +236,8 @@ aliases:
 - 完全在可视体内：保留
 - 与边界相交：生成新的交点顶点，把外面的部分切掉
 
+![[RTR4-CN.pdf#page=48&rect=66,550,516,791|RTR4-CN, p.48]]
+
 #### 数学原理
 
 > [!important] 关键概念
@@ -271,6 +277,8 @@ aliases:
 - 再加上重映射后的 (z)，三者合起来叫 **窗口坐标**
 - 这些结果被送到光栅化阶段
 
+![[RTR4-CN.pdf#page=49&rect=56,589,537,790|RTR4-CN, p.49]]
+
 #### 数学原理
 
 本质上就是**缩放 + 平移**：
@@ -309,6 +317,7 @@ NDC 中点 $(0,0)$ 通常会映射到视口中央。
 > [!question] 核心问题
 > **这个三角形到底覆盖了哪些像素？**
 
+![[RTR4-CN.pdf#page=50&rect=54,337,533,501|RTR4-CN, p.50]]
 ### 2. 基本定义
 
 光栅化阶段会把图元转换成一批片元（fragment）。书中将它分成：
@@ -408,6 +417,8 @@ NDC 中点 $(0,0)$ 通常会映射到视口中央。
 
 > [!example] 龙模型纹理
 > 龙模型本身只有几何形状，贴上纹理之后，鳞片、颜色变化、细节才真正出现。
+
+![[RTR4-CN.pdf#page=52&rect=84,510,509,800|RTR4-CN, p.52]]
 
 #### 常见误区
 
@@ -533,7 +544,7 @@ graph LR
 ## 九、相关章节链接
 
 - [[Chapter 1 - Introduction|第一章：简介]]
-- [[Chapter 3 - The Graphics Processing Unit|第三章：图形处理单元]]
+- [[Chapter 3 The Graphics Processing Unit|第三章：图形处理单元]]
 - [[Chapter 4 - Transforms|第四章：变换]]
 - [[Chapter 5 - Shading Basics|第五章：着色基础]]
 - [[Chapter 6 - Texturing|第六章：纹理]]
